@@ -1,0 +1,24 @@
+<h1 style="text-align: center;">Users</h1>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row g-3">
+                <div *ngFor="let i of data" class="col col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Name: {{i.name}}</h5>
+                          <p class="card-text">Username: {{i.username}}</p>
+                          <p class="card-text">Email: {{i.email}}</p>
+                          <p class="card-text">Address: {{i.address.street}},{{i.address.suite}}</p>
+                          <p class="card-text">Phone: {{i.phone}}</p>
+                          <p class="card-text">Website: {{i.website}}</p>
+                          <p class="card-text">Company: {{i.company.name}}</p>
+                          <a href="#" class="btn btn-primary">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
